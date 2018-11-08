@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?4a00h4');
+  src:  url('fonts/icomoon.eot?4a00h4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4a00h4') format('truetype'),
+    url('fonts/icomoon.woff?4a00h4') format('woff'),
+    url('fonts/icomoon.svg?4a00h4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-copy:before {
+  content: "\e92c";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-users:before {
+  content: "\e972";
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  padding: 15px;
+  }
+
+header p{
+  padding-left: 15px;
+}
+
+.menuArriba  header {
+  font-family: Impact;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  height: 50px;
+  width: 96.5%;
+  align-items: center;
+  background-color: rgba(27, 33, 39, 0.5);
+  color: white;
+  font-size: 150%;
+  margin: 3px 0 3px 0;
+}
+
+.menuArriba header menu {
+  display: inherit;
+}
+
+header ul {
+  display: flex;
+  justify-content:space-between;
+}
+
+header ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+li {
+  margin: 15px;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.Home {
+color: white;
+height: 60vw;
+display: flex;
+justify-content: space-between;
+padding: 0px;
+align-items: center;
+justify-content: center;
+margin:3px 0 3px 0;
+background-image: url(images/1home.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.Home h1{
+  font-size: 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255,0.4);
+  animation: HomeArriba 2s;
+}
+
+@keyframes HomeArriba {
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.Home p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 250%;
+  padding-right:50px;
+  color: black;
+
+}
+.presentacion{
+background-image: url(images/2clientes.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 60vw;
+padding-top: 20vw;
+}
+.Parrafo-nosotros{
+  display: flex;
+  justify-content: space-around;
+}
+.SobreNosotros{
+font-family: 'Montserrat', sans-serif;
+padding: 15px;
+background-color: rgba(255, 255, 255,0.4);
+margin: 7px 0 7px 0;
+color: black;
+font-size: 150%;
+align-items: center;
+}
+.queremos,
+.nuesto-trabajo,
+.proposito{
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(255, 255, 255,0.4);
+  margin: 0px 3px 0px 3px;
+  color: black;
+  font-size: 125%;
+}
+.Parrafo-nosotros h3 {
+  padding: 15px;
+}
+.Servicios {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  height: 30vw;
+  padding: 10% 0;
+
+}
+.tituloServicio{
+font-family: 'Montserrat', sans-serif;
+justify-content: center;
+display: flex;
+border: 1px blue solid;
+}
+.Gruposprueba{
+  display: flex;
+  justify-content: center;
+}
+.GrupoSecciones1{
+  margin: 15px;
+  animation-name: desdeIzq;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.GrupoSecciones2 {
+  margin: 15px;
+  animation-name: desdeDer;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+
+}
+@keyframes desdeIzq {
+  0%{
+    transform: translateX(-150%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+@keyframes desdeDer {
+  0%{
+    transform: translateX(150%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.Seccion1,
+.Seccion2,
+.Seccion3,
+.Seccion4 {
+  border: 1px solid red;
+  border-radius: 10%;
+  padding: 5vw;
+  margin-bottom: inherit;
+  text-align:center;
+}
+.icon-camera,
+.icon-copy,
+.icon-phone,
+.icon-display{
+  font-size: 5vw;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 15px;
+}
