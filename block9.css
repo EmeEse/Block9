@@ -42,7 +42,8 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  padding: 15px;
+  padding: 0 15px;
+  margin: 0;
   }
 
 header p{
@@ -105,7 +106,7 @@ background-size: cover;
   width: 100%;
   background-color: rgba(255, 255, 255,0.4);
   animation: HomeArriba 2s;
-}
+  }
 
 @keyframes HomeArriba {
   0%{
@@ -130,8 +131,9 @@ background-image: url(images/2clientes.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-height: 60vw;
-padding-top: 20vw;
+display: flex;
+flex-wrap: wrap;
+padding: 10% 0;
 }
 .Parrafo-nosotros{
   display: flex;
@@ -145,6 +147,12 @@ margin: 7px 0 7px 0;
 color: black;
 font-size: 150%;
 align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.SobreNosotros p{
+  padding: 0 5%;
 }
 .queremos,
 .nuesto-trabajo,
@@ -161,33 +169,36 @@ align-items: center;
 .Servicios {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  height: 30vw;
-  padding: 10% 0;
+  padding: 4% 0;
 
 }
 .tituloServicio{
 font-family: 'Montserrat', sans-serif;
 justify-content: center;
 display: flex;
-border: 1px blue solid;
+text-decoration: underline blue;
+
 }
 .Gruposprueba{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .GrupoSecciones1{
   margin: 15px;
   animation-name: desdeIzq;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+  display: flex;
 }
 .GrupoSecciones2 {
   margin: 15px;
   animation-name: desdeDer;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-
+  display: flex;
 }
+
 @keyframes desdeIzq {
   0%{
     transform: translateX(-150%);
@@ -207,12 +218,14 @@ border: 1px blue solid;
 .Seccion1,
 .Seccion2,
 .Seccion3,
-.Seccion4 {
-  border: 1px solid red;
-  border-radius: 10%;
+.Seccion4,
+.Seccion5,
+.Seccion6 {
+  border: 1px solid blue;
   padding: 5vw;
   margin-bottom: inherit;
   text-align:center;
+  margin: 0 15px;
 }
 .icon-camera,
 .icon-copy,
@@ -222,4 +235,62 @@ border: 1px blue solid;
   border: 1px solid black;
   border-radius: 50%;
   padding: 15px;
+}
+
+.Proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 5% 0;
+}
+.tituloEquipo,
+.tituloProyectos{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline blue;
+}
+.Ejemploproyecto1,
+.Ejemploproyecto2,
+.Ejemploproyecto3,
+.Ejemploproyecto4 {
+  border: 1px solid black;
+  width: 25vw;
+  height: 25vw;
+  background-color: #5c61d2;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.Ejemploproyecto1:hover,
+.Ejemploproyecto2:hover,
+.Ejemploproyecto3:hover,
+.Ejemploproyecto4:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Equipo{
+  font-family: 'Montserrat', sans-serif;
+  background-color: grey;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+.BloqueMiembros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Miembro1,
+.Miembro2{
+  margin: 0 10px;
+}
+
+.TextoMiembro1 h2,
+.TextoMiembro1 h3,
+.TextoMiembro2 h2,
+.TextoMiembro2 h3{
+  display: flex;
+  justify-content: center;
 }
