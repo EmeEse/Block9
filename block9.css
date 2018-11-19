@@ -45,6 +45,7 @@ body{
   padding: 0 15px;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background: #f5f5dc;
   }
 
 header p{
@@ -128,10 +129,6 @@ background-size: cover;
 
 }
 .presentacion{
-background-image: url(images/2clientes.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
 display: flex;
 flex-wrap: wrap;
 padding: 10% 0;
@@ -143,7 +140,7 @@ padding: 10% 0;
 .SobreNosotros{
 font-family: 'Montserrat', sans-serif;
 padding: 15px;
-background-color: rgba(255, 255, 255,0.4);
+background-color: rgba(255, 255, 255,0.8);
 margin: 7px 0 7px 0;
 color: black;
 font-size: 150%;
@@ -159,7 +156,7 @@ justify-content: center;
 .nuesto-trabajo,
 .proposito{
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(255, 255, 255,0.4);
+  background-color: rgba(255, 255, 255,0.8);
   margin: 0px 3px 0px 3px;
   color: black;
   font-size: 125%;
@@ -171,6 +168,11 @@ justify-content: center;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   padding: 4% 0;
+  background-image: url(images/2clientes.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 
 }
 .tituloServicio{
@@ -178,12 +180,14 @@ font-family: 'Montserrat', sans-serif;
 justify-content: center;
 display: flex;
 text-decoration: underline blue;
+font-size: 150%;
 
 }
 .Gruposprueba{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 125%
 }
 .GrupoSecciones1{
   margin: 15px;
@@ -198,6 +202,15 @@ text-decoration: underline blue;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   display: flex;
+}
+.Seccion1,
+.Seccion2,
+.Seccion3,
+.Seccion4,
+.Seccion5,
+.Seccion6{
+  background-color: rgba(255, 255, 255,0.8);
+
 }
 
 @keyframes desdeIzq {
@@ -250,6 +263,7 @@ text-decoration: underline blue;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   text-decoration: underline blue;
+  font-size: 150%;
 }
 .Ejemploproyecto1,
 .Ejemploproyecto2,
@@ -258,23 +272,22 @@ text-decoration: underline blue;
   border: 1px solid black;
   width: 25vw;
   height: 25vw;
-  background-color: #5c61d2;
   display: inherit;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255,0.8);
 }
 .Ejemploproyecto1:hover,
 .Ejemploproyecto2:hover,
 .Ejemploproyecto3:hover,
 .Ejemploproyecto4:hover{
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
 
 }
 
 .Equipo{
   font-family: 'Montserrat', sans-serif;
-  background-color: grey;
   padding: 20px 0;
   margin: 10px 0;
 }
@@ -288,6 +301,7 @@ text-decoration: underline blue;
 .Miembro1,
 .Miembro2{
   margin: 0 10px;
+    background-color: rgba(255, 255, 255,0.8);
 }
 
 .TextoMiembro1 h2,
