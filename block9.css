@@ -283,7 +283,7 @@ font-size: 150%;
 .Ejemploproyecto4:hover{
   opacity: 1;
   cursor: pointer;
-
+  box-shadow: inset 0 -.2em rgba(0,0,0,.2)
 }
 
 .Equipo{
@@ -301,7 +301,7 @@ font-size: 150%;
 .Miembro1,
 .Miembro2{
   margin: 0 10px;
-    background-color: rgba(255, 255, 255,0.8);
+  background-color: rgba(255, 255, 255,0.8);
 }
 
 .TextoMiembro1 h2,
@@ -322,6 +322,7 @@ font-size: 150%;
   padding: 0 15px;
   height: 250px;
   font-size: 30px;
+  background-color: rgba(255, 255, 255,0.8);
 }
 .LogosContacto p {
   margin: 5px 0;
