@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="block9.css">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
     <title>Block 9</title>
   </head>
   <body>
+    <img class="icon-menu" src="images/iconomenu.png"></img>
     <section class="container">
       <div class="menuArriba">
         <header> <p>Block 9</p>
@@ -146,14 +148,11 @@
   </div>
     </section>
    <script type="text/javascript">
-        //const $Home = document.getElementById("Home");
-        //const $animation = Home.h
-        //Home.addEventListener("click", (event) => { console.log("que pasa acá");
-      //animation.play()
-    //});
-        //const $Secciones = document.getElementById("Secciones");
-        //Secciones.addEventListener("onscroll", (event) => {animation.play()})//
-
+        const menu = document.querySelector('.menuArriba');
+        const burgerButton = document.querySelector('.icon-menu');
+        burgerButton.addEventListener('click', () => {
+          menu.classList.toggle('is-active');
+})
 
       </script>
   </body>

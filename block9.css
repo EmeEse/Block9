@@ -38,6 +38,9 @@
 .icon-users:before {
   content: "\e972";
 }
+.icon-menu:before {
+  content: "\e9bd";
+}
 html {
   scroll-behavior: smooth;
 }
@@ -47,31 +50,48 @@ body{
   font-family: 'Montserrat', sans-serif;
   background: #f5f5dc;
   }
+  .menuArriba{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 50px;
+    width: 97.7%;
+    align-items: center;
+    background-color: rgba(27, 33, 39, 0.5);
+    color: white;
+    font-size: 150%;
+    margin: 3px 0 3px 0;
+  }
 
+  .icon-menu{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.3);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+
+
+  }
+header {
+  display: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
 header p{
   padding-left: 15px;
 }
 
-.menuArriba  header {
-  font-family: Impact;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  height: 50px;
-  width: 97.7%;
-  align-items: center;
-  background-color: rgba(27, 33, 39, 0.5);
-  color: white;
-  font-size: 150%;
-  margin: 3px 0 3px 0;
-}
 
 .menuArriba header menu {
   display: inherit;
 }
 
 header ul {
-  display: flex;
+  display: inherit;
   justify-content:space-between;
 }
 
@@ -161,6 +181,7 @@ border: 3px solid #20603d;
   color: black;
   font-size: 125%;
   border: 3px solid #ffff40;
+  padding: 0 15px;
 }
 .proposito{
   font-family: 'Montserrat', sans-serif;
@@ -169,6 +190,7 @@ border: 3px solid #20603d;
   border: 3px solid #1f46ca;
   color: black;
   font-size: 125%;
+  padding: 0 15px;
 }
 .Parrafo-nosotros h3 {
   padding: 15px;
@@ -196,8 +218,8 @@ color: white;
 .Gruposprueba{
   display: flex;
   justify-content: center;
+  font-size: 125%;
   flex-wrap: wrap;
-  font-size: 125%
 }
 .GrupoSecciones1{
   margin: 15px;
@@ -251,6 +273,7 @@ color: white;
   text-align:center;
   margin: 0 15px;
 }
+
 .icon-camera,
 .icon-copy,
 .icon-phone,
@@ -360,4 +383,76 @@ color: white;
 .LogosContacto img:hover,
 .LogosContacto p:hover{
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+.icon-menu {
+  display: block;
+
+}
+.menuArriba {
+  position: fixed;
+  width: 100vw;
+  font-size: 175%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(27, 33, 39, 0.5);
+  display: block;
+  text-align: center;
+  height: auto;
+  left: -100vw;
+}
+.menuArriba.is-active{
+  left: 0;
+}
+.Home{
+height: 100vw;
+}
+
+.Home p{
+  font-size: 200%;
+  padding-left: 10px;
+}
+.presentacion{
+  display: block;
+}
+.Parrafo-nosotros{
+  display: block;
+  margin: 6px 0;
+}
+.queremos,
+.nuesto-trabajo{
+margin: 6px 0;
+}
+.GrupoSecciones1,
+.GrupoSecciones2{
+  display: block;
+  margin: -10px 0 0 0;
+}
+.Seccion1,
+.Seccion2,
+.Seccion3,
+.Seccion4,
+.Seccion5,
+.Seccion6 {
+  margin: 15px;
+}
+.Proyectos{
+  display: block;
+}
+.Ejemploproyecto1,
+.Ejemploproyecto2,
+.Ejemploproyecto3,
+.Ejemploproyecto4 {
+  width: auto;
+}
+.Ejemploproyecto1 p,
+.Ejemploproyecto2 p,
+.Ejemploproyecto3 p,
+.Ejemploproyecto4 p{
+  padding: 70px 200px;
+}
+.Miembro1 {
+  margin-bottom: 15px;
+}
 }
