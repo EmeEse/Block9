@@ -76,8 +76,6 @@ body{
   text-align: center;
   position: fixed;
   z-index: 4;
-
-
   }
 header {
   display: inherit;
@@ -124,6 +122,7 @@ background-image: url(images/1home.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+background-attachment: fixed;
 }
 
 .Home h1{
@@ -206,8 +205,7 @@ border: 3px solid #20603d;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-
+  background-attachment: fixed;
 }
 .tituloServicio{
 font-family: 'Montserrat', sans-serif;
@@ -462,4 +460,54 @@ margin: 6px 0;
 .Contacto{
   font-size: 20px;
 }
+}
+@media screen and (max-width: 425px) {
+  .Home p{
+    font-size: 120%
+  }
+  .presentacion{
+  font-size: 14px;
+  }
+  .Ejemploproyecto1 p,
+  .Ejemploproyecto2 p,
+  .Ejemploproyecto3 p,
+  .Ejemploproyecto4 p{
+    padding: 0;
+  }
+  .icon-menu{
+  left: 81%;
+  top: 3%;
+  }
+}
+@media screen and (max-width: 321px){
+  body{
+    padding: 0;
+  }
+  .icon-menu{
+    left: 75%;
+    width: 45px;
+    height: 45px;
+  }
+  .SobreNosotros{
+    font-size: 100%;
+  }
+  .queremos,
+  .nuesto-trabajo,
+  .proposito{
+    font-size: 90%;
+  }
+  .tituloEquipo,
+  .tituloProyectos{
+    font-size: 150%;
+  }
+  .BloqueMiembros{
+    font-size: 80%;
+  }
+  .Contacto{
+    display: block;
+    font-size: 17px;
+    padding: 15px;
+    height: auto;
+
+  }
 }
