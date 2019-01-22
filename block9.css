@@ -315,25 +315,44 @@ color: white;
 .Ejemploproyecto1:hover{
   opacity: 1;
   cursor: pointer;
+    color: white;
   background-color: #ffff40;
+  background-image: url(images/imageEj1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vw;
 
 }
 .Ejemploproyecto2:hover{
   opacity: 1;
   cursor: pointer;
+    color: white;
   background-color: #1f46ca;
+  background-image: url(images/imageEj1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vw;
 
 }
 .Ejemploproyecto3:hover{
-  opacity: 1;
+  opacity: rgba(32, 96, 61,0.5);
+  color: white;
   cursor: pointer;
-  background-color: #20603d;
+  background-image: url(images/imageEj1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vw;
 
 }
 .Ejemploproyecto4:hover{
   opacity: 1;
+  color: white;
   cursor: pointer;
   background-color: #cb2821;
+  background-image: url(images/imageEj1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vw;
 
 }
 
